@@ -1,1 +1,1 @@
-[Click here:](https://github.com/annajamroz/weather_app.git)
+[Click here](https://annajamroz.github.io/weather_app/)
