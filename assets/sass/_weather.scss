@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column;
 
     &__title {
         margin: 0 0 30px 0;
@@ -12,4 +13,53 @@
         letter-spacing: 2px;
         user-select: none;
     }
-}
+
+    &__form {
+        // max-width: 500px;
+        // width: 100%;
+        
+        width: min(100% - 30px, 500px);
+
+    }
+
+    &__city {
+        width: 100%;
+        padding: 10px 5px;
+        border: none;
+        border-radius: 50px;
+        outline: none;
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+    &__info {
+       padding: 30px;
+       background-color: #0000002d;
+       color:#fff ;
+       border-radius: 10px;
+       display: flex;
+       align-items: center;
+       gap: 15px;
+    }
+
+    &__temp {
+        font-size: 60px;
+        display: flex;
+        
+
+        span {
+            font-size: 30px;
+            padding: 6px 0 0 0 ;
+
+        }
+     }
+
+     &__details {
+        p {
+            margin: 0 0 5px 0;
+            &:last-of-type{
+                margin: 0;
+            }
+        }
+       
+     }
+ }
