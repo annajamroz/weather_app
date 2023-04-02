@@ -15,10 +15,17 @@
     }
 
     &__form {
-        // max-width: 500px;
-        // width: 100%;
-        
+       
         width: min(100% - 30px, 500px);
+        
+             
+        @include forTablet {
+            width: min(100% - 30px, 500px);
+          }
+    
+          @include forSmartphone {
+            width: min(100% - 30px, 280px);
+        }
 
     }
 
@@ -26,21 +33,38 @@
         width: 100%;
         padding: 10px 5px;
         border: none;
-        border-radius: 50px;
+        border-radius: 20px 0;
         outline: none;
         text-align: center;
         margin: 0 0 40px 0;
+        background-color: $formBgColor;
+
+        &:hover{
+            background-color: $formBgHoverColor;  
+        }
+   
     }
     &__info {
        padding: 30px;
-       background-color: #0000002d;
-       color:#fff ;
-       border-radius: 10px;
+       background-color: $infoBgColor;
+       color: $infoFontFamily;
+       border-radius: 20px 0;
        display: flex;
        align-items: center;
        gap: 15px;
-    }
+       justify-content: space-around;
+       
+      
+       @include forTablet {
+        flex-direction: row; 
+      }
 
+      @include forSmartphone {
+        flex-direction: column; 
+        text-align: center;  
+    }}
+
+   
     &__temp {
         font-size: 60px;
         display: flex;
@@ -52,8 +76,8 @@
 
         }
      }
-
-     &__details {
+     &__location {
+         
         p {
             margin: 0 0 5px 0;
             &:last-of-type{
@@ -62,4 +86,15 @@
         }
        
      }
- }
+     &__details {
+         
+        p {
+            margin: 0 0 5px 0;
+            &:last-of-type{
+                margin: 0;
+            }
+        }
+       
+     }
+
+     }

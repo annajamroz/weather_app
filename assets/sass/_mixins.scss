@@ -3,3 +3,15 @@
     padding: 0;
     list-style: none;
 }
+
+@mixin forTablet {
+    @media (min-width: 768px) and (max-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin forSmartphone {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
