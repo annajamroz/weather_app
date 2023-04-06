@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "weather app",
+    "short_name": "WA",
     "icons": [
         {
             "src": "/assets/favicon/android-chrome-192x192.png",
@@ -16,6 +16,6 @@
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone",
-    "start_url": "/weather_app_aj/index.html",
+    "start_url": "/weather_app/index.html",
     "orientation": "portrait-primary"
 }
