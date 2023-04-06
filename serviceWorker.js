@@ -4,7 +4,7 @@ const assets = [
     "index.html",
     "assets/css/main.css",
     "assets/js/app.js",
-    "assets/video/bg.mp4",
+    "assets/video/bg1.mp4",
 ]
 
 self.addEventListener("install", installEvent => {

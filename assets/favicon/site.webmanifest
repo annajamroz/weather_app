@@ -16,6 +16,6 @@
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone",
-    "start_url": "/index.html",
+    "start_url": "/weather_app_aj/index.html",
     "orientation": "portrait-primary"
 }
